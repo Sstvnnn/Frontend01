@@ -5,6 +5,17 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+a.primary{
+    color: #0269CD;
+}
+
 .container{
     width: 100%;
     max-width: 1024px;
@@ -13,6 +24,8 @@
     margin-right: auto; */
 }
 
+
+/* header */
 header {
     font-size: 12px;
 }
@@ -47,4 +60,78 @@ header {
 .support-search {
     display: flex;
     gap: 12px;
+}
+
+/* main */
+.donation{
+    text-align: center;
+    font-size: 14px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.mac-and-iphone{
+    background-color: #F1EFF3;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.mac-and-iphone video {
+    width: 600px;
+}
+
+.mac-and-iphone h1 {
+    margin-bottom: 8px;
+}
+
+.mac-and-iphone p {
+    padding-bottom: 12px;
+}
+
+.mac-and-iphone.secondary-card{
+    background: #fafafa;
+}
+.secondary-card.actions{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer{
+    background: #F5F5F7;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 42px 0;
+    font-size: 12px;
+}
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer-section span:first-child {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 16px;
+    }
 }
