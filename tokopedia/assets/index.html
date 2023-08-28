@@ -17,12 +17,13 @@
     />
 
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
 
   <body>
     <header>
       <!-- TOKOPEDIA LOGO -->
-      <div>
+      <div id="logo" class="logo">
         <img src="./tokopedia.svg" alt="" />
       </div>
 
@@ -37,205 +38,21 @@
 
       <!-- ICONS -->
       <div class="icons">
-        <span class="material-symbols-outlined">shopping_cart</span>
-        <span class="material-symbols-outlined"> notifications </span>
-        <span class="material-symbols-outlined"> favorite </span>
+        <span class="material-symbols-outlined cart-symbol">
+          shopping_cart
+        </span>
+        <span class="material-symbols-outlined notif-symbol">
+          notifications
+        </span>
+        <span class="material-symbols-outlined favorite-symbol">
+          favorite
+        </span>
       </div>
     </header>
 
     <main>
       <h1>Produk Pilihan untuk Kamu</h1>
-      <div class="product-list">
-        <div class="product">
-          <!-- IMAGE -->
-          <div class="product-image-cover">
-            <img
-              src="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-              alt=""
-            />
-          </div>
-          <div class="product-image-contain">
-            <img
-              src="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-              alt=""
-            />
-          </div>
-
-          <!-- PRODUCT DETAIL -->
-          <div class="product-detail">
-            <span>iPhone 9</span>
-            <span>Rp80.0000</span>
-            <div class="product-info">
-              <div class="product-rating">
-                <span class="material-symbols-outlined"> star </span>
-                <span>4.9</span>
-              </div>
-              <span>Stok 86</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product">
-          <!-- IMAGE -->
-          <div class="product-image">
-            <img
-              src="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-              alt=""
-            />
-          </div>
-
-          <!-- PRODUCT DETAIL -->
-          <div class="product-detail">
-            <span>iPhone 9</span>
-            <span>Rp80.0000</span>
-            <div class="product-info">
-              <div class="product-rating">
-                <span class="material-symbols-outlined"> star </span>
-                <span>4.9</span>
-              </div>
-              <span>Stok 86</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product">
-          <!-- IMAGE -->
-          <div class="product-image">
-            <img
-              src="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-              alt=""
-            />
-          </div>
-
-          <!-- PRODUCT DETAIL -->
-          <div class="product-detail">
-            <span>iPhone 9</span>
-            <span>Rp80.0000</span>
-            <div class="product-info">
-              <div class="product-rating">
-                <span class="material-symbols-outlined"> star </span>
-                <span>4.9</span>
-              </div>
-              <span>Stok 86</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product">
-          <!-- IMAGE -->
-          <div class="product-image">
-            <img
-              src="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-              alt=""
-            />
-          </div>
-
-          <!-- PRODUCT DETAIL -->
-          <div class="product-detail">
-            <span>iPhone 9</span>
-            <span>Rp80.0000</span>
-            <div class="product-info">
-              <div class="product-rating">
-                <span class="material-symbols-outlined"> star </span>
-                <span>4.9</span>
-              </div>
-              <span>Stok 86</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product">
-          <!-- IMAGE -->
-          <div class="product-image">
-            <img
-              src="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-              alt=""
-            />
-          </div>
-
-          <!-- PRODUCT DETAIL -->
-          <div class="product-detail">
-            <span>iPhone 9</span>
-            <span>Rp80.0000</span>
-            <div class="product-info">
-              <div class="product-rating">
-                <span class="material-symbols-outlined"> star </span>
-                <span>4.9</span>
-              </div>
-              <span>Stok 86</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product">
-          <!-- IMAGE -->
-          <div class="product-image">
-            <img
-              src="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-              alt=""
-            />
-          </div>
-
-          <!-- PRODUCT DETAIL -->
-          <div class="product-detail">
-            <span>iPhone 9</span>
-            <span>Rp80.0000</span>
-            <div class="product-info">
-              <div class="product-rating">
-                <span class="material-symbols-outlined"> star </span>
-                <span>4.9</span>
-              </div>
-              <span>Stok 86</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product">
-          <!-- IMAGE -->
-          <div class="product-image">
-            <img
-              src="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-              alt=""
-            />
-          </div>
-
-          <!-- PRODUCT DETAIL -->
-          <div class="product-detail">
-            <span>iPhone 9</span>
-            <span>Rp80.0000</span>
-            <div class="product-info">
-              <div class="product-rating">
-                <span class="material-symbols-outlined"> star </span>
-                <span>4.9</span>
-              </div>
-              <span>Stok 86</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product">
-          <!-- IMAGE -->
-          <div class="product-image">
-            <img
-              src="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-              alt=""
-            />
-          </div>
-
-          <!-- PRODUCT DETAIL -->
-          <div class="product-detail">
-            <span>iPhone 9</span>
-            <span>Rp80.0000</span>
-            <div class="product-info">
-              <div class="product-rating">
-                <span class="material-symbols-outlined"> star </span>
-                <span>4.9</span>
-              </div>
-              <span>Stok 86</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="product-list" id="product-list"></div>
     </main>
   </body>
 </html>
