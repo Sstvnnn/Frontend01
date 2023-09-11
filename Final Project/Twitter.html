@@ -19,11 +19,11 @@
     />
 
     <link rel="stylesheet" href="./Twitter.css" />
-    <script src="./Twitter.js"></script>
+    <script src="./Twitter.js" defer></script>
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <!-- LOGO TWITTER -->
       <div class="twitterLogo">
         <img
@@ -37,282 +37,53 @@
       <!-- SEARCH BAR -->
       <div class="search-container">
         <span class="material-symbols-outlined search-icon"> search </span>
-        <input type="text" class="searchBar" placeholder="Search User" />
+        <input
+          type="text"
+          class="searchBar"
+          id="search"
+          placeholder="Search User"
+        />
       </div>
     </header>
 
     <main>
       <!-- USER LIST -->
-      <div class="user-list">
-        <!-- USER 1 -->
-        <div class="user">
+      <div class="rightside">
+        <div class="user-list" id="user-list">
+          <!-- USER 1 -->
+          <!-- <div class="user">
           <button class="user-button"></button>
-          <!-- IMAGE -->
           <div class="user-image">
             <img
               src="https://robohash.org/hicveldicta.png?size=50x50&set=set1"
               alt=""
             />
           </div>
-          <!-- USER PROFILE -->
-          <div class="user-profile">
-            <div class="user-name-gender">
-              <span class="user-name">Terry Medhurst</span>
-              <span class="material-symbols-outlined gender-male"> male </span>
-            </div>
-            <div class="user-email">
-              <span>atunyo@sohu.com</span>
-            </div>
-          </div>
-          <div class="arrow-sign">
-            <span class="material-symbols-outlined chevron">
-              chevron_right
-            </span>
-          </div>
-        </div>
-        <!-- USER 2 -->
-        <div class="user">
-          <button class="user-button"></button>
-          <!-- IMAGE -->
-          <div class="user-image">
-            <img
-              src="https://robohash.org/hicveldicta.png?size=50x50&set=set1"
-              alt=""
-            />
-          </div>
-          <!-- USER PROFILE -->
-          <div class="user-profile">
-            <div class="user-name-gender">
-              <span class="user-name">Terry Medhurst</span>
-              <span class="material-symbols-outlined gender-male"> male </span>
-            </div>
-            <div class="user-email">
-              <span>atunyo@sohu.com</span>
-            </div>
-          </div>
-          <div class="arrow-sign">
-            <span class="material-symbols-outlined chevron">
-              chevron_right
-            </span>
-          </div>
-        </div>
-        <!-- USER 3 -->
-        <div class="user">
-          <button class="user-button"></button>
-          <!-- IMAGE -->
-          <div class="user-image">
-            <img
-              src="https://robohash.org/hicveldicta.png?size=50x50&set=set1"
-              alt=""
-            />
-          </div>
-          <!-- USER PROFILE -->
-          <div class="user-profile">
-            <div class="user-name-gender">
-              <span class="user-name">Terry Medhurst</span>
-              <span class="material-symbols-outlined gender-male"> male </span>
-            </div>
-            <div class="user-email">
-              <span>atunyo@sohu.com</span>
-            </div>
-          </div>
-          <div class="arrow-sign">
-            <span class="material-symbols-outlined chevron">
-              chevron_right
-            </span>
-          </div>
-        </div>
-        <!-- USER 4 -->
-        <div class="user">
-          <button class="user-button"></button>
-          <!-- IMAGE -->
-          <div class="user-image">
-            <img
-              src="https://robohash.org/hicveldicta.png?size=50x50&set=set1"
-              alt=""
-            />
-          </div>
-          <!-- USER PROFILE -->
-          <div class="user-profile">
-            <div class="user-name-gender">
-              <span class="user-name">Terry Medhurst</span>
-              <span class="material-symbols-outlined gender-male"> male </span>
-            </div>
-            <div class="user-email">
-              <span>atunyo@sohu.com</span>
-            </div>
-          </div>
-          <div class="arrow-sign">
-            <span class="material-symbols-outlined chevron">
-              chevron_right
-            </span>
-          </div>
-        </div>
-        <!-- USER 5 -->
-        <div class="user">
-          <button class="user-button"></button>
-          <!-- IMAGE -->
-          <div class="user-image">
-            <img
-              src="https://robohash.org/hicveldicta.png?size=50x50&set=set1"
-              alt=""
-            />
-          </div>
-          <!-- USER PROFILE -->
-          <div class="user-profile">
-            <div class="user-name-gender">
-              <span class="user-name">Terry Medhurst</span>
-              <span class="material-symbols-outlined gender-male"> male </span>
-            </div>
-            <div class="user-email">
-              <span>atunyo@sohu.com</span>
-            </div>
-          </div>
-          <div class="arrow-sign">
-            <span class="material-symbols-outlined chevron">
-              chevron_right
-            </span>
-          </div>
-        </div>
-        <!-- USER 6 -->
-        <div class="user">
-          <button class="user-button"></button>
-          <!-- IMAGE -->
-          <div class="user-image">
-            <img
-              src="https://robohash.org/hicveldicta.png?size=50x50&set=set1"
-              alt=""
-            />
-          </div>
-          <!-- USER PROFILE -->
-          <div class="user-profile">
-            <div class="user-name-gender">
-              <span class="user-name">Terry Medhurst</span>
-              <span class="material-symbols-outlined gender-male"> male </span>
-            </div>
-            <div class="user-email">
-              <span>atunyo@sohu.com</span>
-            </div>
-          </div>
-          <div class="arrow-sign">
-            <span class="material-symbols-outlined chevron">
-              chevron_right
-            </span>
-          </div>
-        </div>
-        <!-- USER 7 -->
-        <div class="user">
-          <button class="user-button"></button>
-          <!-- IMAGE -->
-          <div class="user-image">
-            <img
-              src="https://robohash.org/hicveldicta.png?size=50x50&set=set1"
-              alt=""
-            />
-          </div>
-          <!-- USER PROFILE -->
-          <div class="user-profile">
-            <div class="user-name-gender">
-              <span class="user-name">Terry Medhurst</span>
-              <span class="material-symbols-outlined gender-male"> male </span>
-            </div>
-            <div class="user-email">
-              <span>atunyo@sohu.com</span>
-            </div>
-          </div>
-          <div class="arrow-sign">
-            <span class="material-symbols-outlined chevron">
-              chevron_right
-            </span>
-          </div>
-        </div>
-        <!-- USER 8 -->
-        <div class="user">
-          <button class="user-button"></button>
-          <!-- IMAGE -->
-          <div class="user-image">
-            <img
-              src="https://robohash.org/hicveldicta.png?size=50x50&set=set1"
-              alt=""
-            />
-          </div>
-          <!-- USER PROFILE -->
-          <div class="user-profile">
-            <div class="user-name-gender">
-              <span class="user-name">Terry Medhurst</span>
-              <span class="material-symbols-outlined gender-male"> male </span>
-            </div>
-            <div class="user-email">
-              <span>atunyo@sohu.com</span>
-            </div>
-          </div>
-          <div class="arrow-sign">
-            <span class="material-symbols-outlined chevron">
-              chevron_right
-            </span>
-          </div>
-        </div>
-        <!-- USER 9 -->
-        <div class="user">
-          <button class="user-button"></button>
-          <!-- IMAGE -->
-          <div class="user-image">
-            <img
-              src="https://robohash.org/hicveldicta.png?size=50x50&set=set1"
-              alt=""
-            />
-          </div>
-          <!-- USER PROFILE -->
-          <div class="user-profile">
-            <div class="user-name-gender">
-              <span class="user-name">Terry Medhurst</span>
-              <span class="material-symbols-outlined gender-male"> male </span>
-            </div>
-            <div class="user-email">
-              <span>atunyo@sohu.com</span>
-            </div>
-          </div>
-          <div class="arrow-sign">
-            <span class="material-symbols-outlined chevron">
-              chevron_right
-            </span>
-          </div>
-        </div>
-        <!-- USER 10 -->
-        <div class="user">
-          <button class="user-button"></button>
-          <!-- IMAGE -->
-          <div class="user-image">
-            <img
-              src="https://robohash.org/hicveldicta.png?size=50x50&set=set1"
-              alt=""
-            />
-          </div>
-          <!-- USER PROFILE -->
-          <div class="user-profile">
-            <div class="user-name-gender">
-              <span class="user-name">Terry Medhurst</span>
-              <span class="material-symbols-outlined gender-male"> male </span>
-            </div>
-            <div class="user-email">
-              <span>atunyo@sohu.com</span>
-            </div>
-          </div>
-          <div class="arrow-sign">
-            <span class="material-symbols-outlined chevron">
-              chevron_right
-            </span>
-          </div>
-        </div>
 
+          <div class="user-profile">
+            <div class="user-name-gender">
+              <span class="user-name">Terry Medhurst</span>
+              <span class="material-symbols-outlined gender-male"> male </span>
+            </div>
+            <div class="user-email">
+              <span>atunyo@sohu.com</span>
+            </div>
+          </div>
+          <div class="arrow-sign">
+            <span class="material-symbols-outlined chevron">
+              chevron_right
+            </span>
+          </div>
+        </div> -->
+        </div>
         <!-- LIST PREV NEXT -->
         <div class="userlist-prev-next">
-          <button class="prev-button">Prev</button>
+          <button class="prev-button" id="prev-button">Prev</button>
           <div class="user-shown">
             <span class="user-showing">Showing 1-10</span>
             <span class="user-results">from 100 results</span>
           </div>
-          <button class="next-button">Next</button>
+          <button class="next-button" id="next-button">Next</button>
         </div>
       </div>
       <!-- USER DETAILS EMPTY -->

@@ -57,6 +57,7 @@ header .search-container .searchBar{
     outline: none;
     flex: 1;
     caret-color: white;
+    color: white;
 }
 
 /* MAIN */
@@ -121,6 +122,11 @@ main {
     position: absolute;
     left: 24px;
 }
+.user-image img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
 
 .user-name {
     font-weight: normal;
@@ -135,13 +141,13 @@ main {
 .arrow-sign {
     display: flex;
     align-items: center;
-    max-width: 50px;
+    top: 28px;
+    left: 380px;
+    position: absolute;
 }
 .chevron {
     color: #737373;
-    display: flex;
-    align-items: center;
-    padding-left: 120px;
+    font-size: 28px;
 }
 .user:hover .chevron {
     color: #1E83C7;
@@ -158,6 +164,10 @@ main {
 .gender-male {
     color:  #1764A1;
 }
+.gender-female{
+    color: #B503A3;
+}
+
 .user-email {
     font-size: 12px;
     display: flex;
@@ -172,7 +182,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 425px;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
     padding-top: 40px;
     overflow: hidden;
     border-bottom: 1.5px solid #2E3236;
@@ -303,6 +313,11 @@ main {
     position: absolute;
     left: 24px;
     top: 8px;
+}
+.filled-user-image img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
 }
 .user-info {
     display: flex;
