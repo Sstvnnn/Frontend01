@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+    background: #222222;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    max-width: 1200px;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: flex-start;
+    background: #222222;
+    padding: 12px 32px;
+    border-bottom: 1.5px solid #2E3236;
+    border-left: 1.5px solid #2E3236;
+    border-right: 1.5px solid #2E3236;;
+    top: 0;
+    gap: 200px;
+}
+header img {
+    display: block;
+    width: 24px;
+}
+header .twitterLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .twitterLogo .logoText {
+    font-family: 'Syne', sans-serif;
+    color: white;
+}
+header .search-container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 400px;
+    position: relative;
+    flex: 1;
+  }
+header .search-container span{
+    position: absolute;
+    left: 12px;
+    color: #858585;
+    background-color:#2E3236;
+}
+header .search-container .searchBar{
+    border-radius: 12px;
+    background-color:#2E3236;
+    border: 1px solid#2e2326;
+    padding: 8px 16px;
+    padding-left: 42px;
+    outline: none;
+    flex: 1;
+    caret-color: white;
+}
+
+/* MAIN */
+main {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* USER LIST */
+.user-list {
+    display: flex;
+    flex-direction: column;
+    width: 425px;
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+    padding: 12px 24px;
+    border-bottom: 1.5px solid #2E3236;
+    border-left: 1.5px solid #2E3236;
+    border-right: 1.5px solid #2E3236;
+}
+
+.user-button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 425px;
+    height: 80px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1;
+  }
+.user:hover .user-button  {
+    background-color: rgba(32, 166, 255, 0.2);
+    transition: background-color 300ms;
+}
+
+/* .user-button.active {
+    
+} */
+
+.user-image{
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #2E3236;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 24px;
+}
+
+.user-name {
+    font-weight: normal;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    padding-left: 90px;
+}
+
+.arrow-sign {
+    display: flex;
+    align-items: center;
+    max-width: 50px;
+}
+.chevron {
+    color: #737373;
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+}
+.user:hover .chevron {
+    color: #1E83C7;
+    transition: background-color 300ms;
+}
+
+.user-name-gender {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 16px;
+}
+.gender-male {
+    color:  #1764A1;
+}
+.user-email {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: grey;
+    font-weight: normal;
+}
+
+.userlist-prev-next {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 425px;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    overflow: hidden;
+    border-bottom: 1.5px solid #2E3236;
+    border-left: 1.5px solid #2E3236;
+    border-right: 1.5px solid #2E3236;
+    position: relative;
+    /*  */
+    flex: 1; 
+}
+.prev-button {
+    display: flex;
+    align-items: center;
+    background-color: #1D9BF0;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 6px 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 24px;
+    font-weight: normal;
+}
+
+.next-button {
+    display: flex;
+    align-items: center;
+    background-color: #1D9BF0;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 6px 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 24px;
+    font-weight: normal;
+}
+
+.user-shown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 140px;
+    color: white;
+}
+.user-showing {
+    font-weight: normal;
+}
+.user-results {
+    font-weight: normal;
+}
+
+.prev-button:hover {
+    background-color: rgba(32, 166, 255, 0.2);
+    transition: background-color 300ms;
+    color: rgba(255, 255, 255, 0.5);
+}
+.next-button:hover {
+    background-color: rgba(32, 166, 255, 0.2);
+    transition: background-color 300ms;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* USER DETAILS EMPTY */
+.user-details-empty {
+    color: white;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-bottom: 1.5px solid #2E3236;
+    border-right: 1.5px solid #2E3236;
+    width: 775px;
+    gap: 8px;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.empty-first-span {
+    font-weight: normal;
+}
+.empty-second-span {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: grey;
+    font-weight: normal;
+}
+
+/* USER DETAILS FILLED */
+.user-details-filled {
+    display: flex;
+    flex-direction: column;
+    width: 775px;
+    border-bottom: 1.5px solid #2E3236;
+    border-right: 1.5px solid #2E3236;
+  }
+
+  /* FILLED USER PROFILE SECTION */
+.user-details-filled-profile {
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    border-bottom: 1.5px solid #2E3236;
+    padding: 12px 20px;
+}
+
+/* FILLED USER PROFILE */
+.filled-user-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+    padding: 12px 20px;
+}
+
+.filled-user-image{
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #2E3236;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 24px;
+    top: 8px;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.userInfo-name {
+    font-weight: normal;
+    color: white;
+}
+.userInfo-email {
+    font-size: 12px;
+    padding-left: 48px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    color: grey;
+}
+.userInfo-namegender {
+    display: flex;
+    flex-direction: row;
+    padding-left: 90px;
+    gap: 8px;
+}
+.userInfo-genderMale {
+    color: #1764A1;
+}
+
+.user-information {
+    display: grid;
+    grid-template-columns: 320px 320px;
+    grid-template-rows: auto;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    row-gap: 20px;
+  }
+
+.user-information-title {
+    color: grey;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.user-information-content {
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* USER POSTS */
+
+.user-posts {
+    width: 100%;
+    height: 100%;
+    background-color: #1E1E1E;
+}
+.user-posts h1 {
+    color: white;
+    font-weight: normal;
+    padding: 20px 40px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 200px;
+    gap: 20px;
+    background-color: transparent;
+}
+.posts {
+    padding: 20px 20px;
+    padding-bottom: 15px;
+    background-color: #222222;
+    border: 1px solid #2E3236;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.posts .post-title{
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    background-color: transparent;
+}
+.posts p{
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: normal;
+    font-size: 12px;
+}
+.posts .post-tags {
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.posts .post-tags span {
+    background-color: #1D9BF0;
+    padding: 4px 12px;
+    border-radius: 12px;
+}
